@@ -1,54 +1,36 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-/*
-| -------------------------------------------------------------------------
-| URI ROUTING
-| -------------------------------------------------------------------------
-| This file lets you re-map URI requests to specific controller functions.
-|
-| Typically there is a one-to-one relationship between a URL string
-| and its corresponding controller class/method. The segments in a
-| URL normally follow this pattern:
-|
-|	example.com/class/method/id/
-|
-| In some instances, however, you may want to remap this relationship
-| so that a different class/function is called than the one
-| corresponding to the URL.
-|
-| Please see the user guide for complete details:
-|
-|	https://codeigniter.com/userguide3/general/routing.html
-|
-| -------------------------------------------------------------------------
-| RESERVED ROUTES
-| -------------------------------------------------------------------------
-|
-| There are three reserved routes:
-|
-|	$route['default_controller'] = 'welcome';
-|
-| This route indicates which controller class should be loaded if the
-| URI contains no data. In the above example, the "welcome" class
-| would be loaded.
-|
-|	$route['404_override'] = 'errors/page_missing';
-|
-| This route will tell the Router which controller/method to use if those
-| provided in the URL cannot be matched to a valid route.
-|
-|	$route['translate_uri_dashes'] = FALSE;
-|
-| This is not exactly a route, but allows you to automatically route
-| controller and method names that contain dashes. '-' isn't a valid
-| class or method name character, so it requires translation.
-| When you set this option to TRUE, it will replace ALL dashes in the
-| controller and method URI segments.
-|
-| Examples:	my-controller/index	-> my_controller/index
-|		my-controller/my-method	-> my_controller/my_method
-*/
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['about'] = 'Welcome/about';
+
+// solution
+$route['solution/digital-age-networking'] = 'Welcome/digital_age_networking';
+$route['solution/business-continuity-collaboration'] = 'Welcome/business_continuity_collaboration';
+$route['solution/security-intelligence'] = 'Welcome/security_intelligence';
+
+// technology
+$route['technology/unified-network-infrastructure'] = 'Welcome/unified_network_infrastructure';
+$route['technology/private-cloud-computing-for-mission-critical-system'] = 'Welcome/private_cloud';
+$route['technology/internet-of-things'] = 'Welcome/internet_of_things';
+$route['technology/collaboration-communication'] = 'Welcome/collaboration_communication';
+$route['technology/secured-communication'] = 'Welcome/secured_communication';
+$route['technology/military-grade-communication-system'] = 'Welcome/military_grade';
+$route['technology/digital-workplace'] = 'Welcome/digital_workplace';
+$route['technology/r17-integrated-security-solutions'] = 'Welcome/r17_integrated';
+$route['technology/location-services'] = 'Welcome/location_services';
+$route['technology/security-intelligence'] = 'Welcome/tech_security_intelligence';
+
+// project
+$route['project/it-service-management'] = 'Welcome/it_service_management';
+$route['project/it-enterprise-architecture'] = 'Welcome/it_enterprise_architecture';
+$route['project/secure-cyber-ecosystem-monitoring-center'] = 'Welcome/secure_cyber';
+$route['project/radio-communication-system-combat-vehicles'] = 'Welcome/radio_communication';
+$route['project/data-digital-forensic'] = 'Welcome/data_digital_forensic';
+
+
+$route['contact-us'] = 'Welcome/contact_us';
+$route['career'] = 'Welcome/career';
