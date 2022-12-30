@@ -43,7 +43,7 @@
 					<h2 data-wow-delay=".4s" class="wow fadeInDown">Contact Us</h2>
 					<ul class="list-inline lead">
 						<li>
-							<a data-wow-delay=".4s" href="/contact-us" class="btn btn-white btn-lg page-scroll wow fadeInRight">Click Here</a>
+							<a data-wow-delay=".4s" href="<?= base_url(''); ?>contact-us" class="btn btn-white btn-lg page-scroll wow fadeInRight">Click Here</a>
 						</li>
 					</ul>
 				</div>
@@ -68,113 +68,32 @@
 					sustainable future.
 				</p>
 				<p class="mt-4">
-					<a href="/about" type="button" class="btn btn-blue">More Detail</a>
+					<a href="<?= base_url(''); ?>about" type="button" class="btn btn-blue">More Detail</a>
 				</p>
 			</div>
 		</div>
 	</div>
 </section>
 
+<!-- clients -->
 <section class="section-small">
 	<div class="container">
 		<div class="row">
 			<div class="col">
 				<h3 class="text-center">Clients</h3>
 				<div class="owl-carousel owl-theme client-carousel">
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/adhi.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/kemhan.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/kkp.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/menhub.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/pindad.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/tni-ad.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/pushidroal.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/bbm.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/bg.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/scg.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/uin-jambi.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/uin-padang.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/unsrat.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/unsri.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/za.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/ap.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/bbh.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/bli.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/bpi.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/dm.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/eem.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/gbs.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/gwk.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/mlp.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/mri.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/nei.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/pal.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/hk.jpg" alt="" />
-					</div>
-					<div class="item">
-						<img src="<?= base_url('assets'); ?>/img/clients/imu.jpg" alt="" />
-					</div>
+					<?php foreach ($clients as $client) : ?>
+						<div class="item">
+							<img src="<?= base_url('assets'); ?>/<?= $client['filename']; ?>" alt="<?= $client['name']; ?>" />
+						</div>
+					<?php endforeach; ?>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-<!-- Services Section-->
+<!-- Section-->
 <section>
 	<div class="container text-center" id="solution">
 		<div class="row">
@@ -183,21 +102,13 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-4 solution-item">
-				<img class="mb-4" src="<?= base_url('assets'); ?>/img/solution/dan.jpg" alt="" />
-				<h4>Digital Age Networking</h4>
-				<a class="btn btn-blue btn-more" href="/solution/digital-age-networking">More Detail</a>
-			</div>
-			<div class="col-sm-4 solution-item">
-				<img class="mb-4" src="<?= base_url('assets'); ?>/img/solution/bcc.jpg" alt="" />
-				<h4>Business Continuity Collaboration</h4>
-				<a class="btn btn-blue btn-more-dif" href="/solution/business-continuity-collaboration">More Detail</a>
-			</div>
-			<div class="col-sm-4 solution-item">
-				<img class="mb-4" src="<?= base_url('assets'); ?>/img/solution/is.jpg" alt="" />
-				<h4>Security & Intelligence</h4>
-				<a class="btn btn-blue btn-more" href="/solution/security-intelligence">More Detail</a>
-			</div>
+			<?php foreach ($solutions as $solution) : ?>
+				<div class="col-sm-4 solution-item">
+					<img class="mb-4" src="<?= base_url('assets/img/solution/' . $solution['filename']); ?>" alt="<?= $solution['name']; ?>" />
+					<h5><?= $solution['name']; ?></h5>
+					<a class="btn btn-blue btn-more" href="<?= base_url('' . $solution['url']); ?>">More Detail</a>
+				</div>
+			<?php endforeach; ?>
 		</div>
 	</div>
 </section>
@@ -212,116 +123,19 @@
 			</div>
 		</div>
 		<div class="techno-wrap">
-			<div class="techno-item">
-				<div class="portfolio-item">
-					<a href="/technology/unified-network-infrastructure"><img src="<?= base_url('assets/'); ?>img/techno/uni.jpg" alt="" />
-						<div class="portfolio-overlay">
-							<div class="caption">
-								<h5>Unified Network Infrastructure</h5>
+			<?php foreach ($technologies as $technology) : ?>
+				<div class="techno-item">
+					<div class="portfolio-item">
+						<a href="<?= base_url('' . $technology['url']); ?>"><img src="<?= base_url('assets/img/techno/' . $technology['filename']); ?>" alt="<?= $technology['name']; ?>" />
+							<div class="portfolio-overlay">
+								<div class="caption">
+									<h5><?= $technology['name']; ?></h5>
+								</div>
 							</div>
-						</div>
-					</a>
+						</a>
+					</div>
 				</div>
-			</div>
-			<div class="techno-item">
-				<div class="portfolio-item">
-					<a href="/technology/private-cloud-computing-for-mission-critical-system"><img src="<?= base_url('assets/'); ?>img/techno/an.jpg" alt="" />
-						<div class="portfolio-overlay">
-							<div class="caption">
-								<h5>PRIVATE CLOUD COMPUTING FOR MISSION CRITICAL SYSTEM</h5>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="techno-item">
-				<div class="portfolio-item">
-					<a href="/technology/internet-of-things"><img src="<?= base_url('assets/'); ?>img/techno/iot.jpg" alt="" />
-						<div class="portfolio-overlay">
-							<div class="caption">
-								<h5>Internet of Things (IoT)</h5>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="techno-item">
-				<div class="portfolio-item">
-					<a href="/technology/collaboration-communication"><img src="<?= base_url('assets/'); ?>img/techno/cv.jpg" alt="" />
-						<div class="portfolio-overlay">
-							<div class="caption">
-								<h5>Collaboration & Communication</h5>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="techno-item">
-				<div class="portfolio-item">
-					<a href="/technology/secured-communication"><img src="<?= base_url('assets/'); ?>img/techno/sc.jpg" alt="" />
-						<div class="portfolio-overlay">
-							<div class="caption">
-								<h5>Secured Communication</h5>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="techno-item">
-				<div class="portfolio-item">
-					<a href="/technology/military-grade-communication-system"><img src="<?= base_url('assets/'); ?>img/techno/cas.jpg" alt="" />
-						<div class="portfolio-overlay">
-							<div class="caption">
-								<h5>MILITARY GRADE COMMUNICATION SYSTEM</h5>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="techno-item">
-				<div class="portfolio-item">
-					<a href="/technology/digital-workplace"><img src="<?= base_url('assets/'); ?>img/techno/dw.jpg" alt="" />
-						<div class="portfolio-overlay">
-							<div class="caption">
-								<h5>Digital Workplace</h5>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="techno-item">
-				<div class="portfolio-item">
-					<a href="/technology/r17-integrated-security-solutions"><img src="<?= base_url('assets/'); ?>img/techno/riss.jpg" alt="" />
-						<div class="portfolio-overlay">
-							<div class="caption">
-								<h5>R17 Integrated Security Solutions (RISS)</h5>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="techno-item">
-				<div class="portfolio-item">
-					<a href="/technology/location-services"><img src="<?= base_url('assets/'); ?>img/techno/ls.jpg" alt="" />
-						<div class="portfolio-overlay">
-							<div class="caption">
-								<h5>Location Based Services</h5>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="techno-item">
-				<div class="portfolio-item">
-					<a href="/technology/security-intelligence"><img src="<?= base_url('assets/'); ?>img/techno/si.jpg" alt="" />
-						<div class="portfolio-overlay">
-							<div class="caption">
-								<h5>Security Intelligence</h5>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
+			<?php endforeach; ?>
 		</div>
 	</div>
 </section>
@@ -333,25 +147,9 @@
 			<div class="col">
 				<h3 class="text-center">Our Partners</h3>
 				<div class="wrapper">
-					<img src="<?= base_url('assets'); ?>/img/partners/1.png" alt="" />
-					<img src="<?= base_url('assets'); ?>/img/partners/2.png" alt="" />
-					<img src="<?= base_url('assets'); ?>/img/partners/3.png" alt="" />
-					<img src="<?= base_url('assets'); ?>/img/partners/5.png" alt="" />
-					<img src="<?= base_url('assets'); ?>/img/partners/6.png" alt="" />
-					<img src="<?= base_url('assets'); ?>/img/partners/7.png" alt="" />
-					<img src="<?= base_url('assets'); ?>/img/partners/9.png" alt="" />
-					<img src="<?= base_url('assets'); ?>/img/partners/10.png" alt="" />
-					<img src="<?= base_url('assets'); ?>/img/partners/11.png" alt="" />
-					<img src="<?= base_url('assets'); ?>/img/partners/12.png" alt="" />
-					<!-- <img src="<?= base_url('assets'); ?>/img/partners/13.png" alt="" /> -->
-					<img src="<?= base_url('assets'); ?>/img/partners/14.png" alt="" />
-					<img src="<?= base_url('assets'); ?>/img/partners/15.png" alt="" />
-					<img src="<?= base_url('assets'); ?>/img/partners/riss-kecil.jpg" alt="" />
-					<img src="<?= base_url('assets'); ?>/img/partners/fujitsu.jpg" alt="" />
-					<img src="<?= base_url('assets'); ?>/img/partners/abacus.jpg" alt="" />
-					<img src="<?= base_url('assets'); ?>/img/partners/ivanti.jpg" alt="" />
-					<img src="<?= base_url('assets'); ?>/img/partners/edge.jpg" alt="" />
-					<img src="<?= base_url('assets'); ?>/img/partners/juniper.jpg" alt="" />
+					<?php foreach ($partners as $partner) : ?>
+						<img src="<?= base_url('assets'); ?>/img/partners/<?= $partner['filename']; ?>" alt="<?= $partner['name']; ?>" />
+					<?php endforeach; ?>
 				</div>
 			</div>
 		</div>

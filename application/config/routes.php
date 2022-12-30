@@ -25,12 +25,19 @@ $route['technology/location-services'] = 'Welcome/location_services';
 $route['technology/security-intelligence'] = 'Welcome/tech_security_intelligence';
 
 // project
+$route['project'] = 'Welcome/project';
 $route['project/it-service-management'] = 'Welcome/it_service_management';
 $route['project/it-enterprise-architecture'] = 'Welcome/it_enterprise_architecture';
 $route['project/secure-cyber-ecosystem-monitoring-center'] = 'Welcome/secure_cyber';
 $route['project/radio-communication-system-combat-vehicles'] = 'Welcome/radio_communication';
 $route['project/data-digital-forensic'] = 'Welcome/data_digital_forensic';
 
-
+// contact
 $route['contact-us'] = 'Welcome/contact_us';
 $route['career'] = 'Welcome/career';
+
+// insight article
+$route['insight/article-news'] = 'Article/article_news';
+$route['insight/article-news/(:num)'] = 'Article/article_news';
+$route['insight/article/(:any)'] = 'Article/single_article/$1';
+$route['insight/event'] = 'Article/event';

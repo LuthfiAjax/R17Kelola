@@ -15,7 +15,7 @@
                 South Jakarta<br />
                 DKI Jakarta 12190 <br />
                 Phone: <a href="tel:+622139721717">+62 21 3972 1717</a> <br />
-                Email: <a href="mailto:support@r17.co.id">support@r17.co.id</a>
+                Email: <a href="mailto:support@r17.co.id">sales@r17.co.id</a>
                 <br />
             </div>
             <div class="col-md-2">
@@ -28,7 +28,7 @@
                     <li>
                         <a href="<?= base_url(''); ?>#technology" class="page-scroll">Technology</a> <br />
                     </li>
-                    <li><a href="#">Insights</a></li>
+                    <li><a href="<?= base_url(''); ?>#">Insights</a></li>
                 </ul>
             </div>
             <div class="col-md-3">
