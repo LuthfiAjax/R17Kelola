@@ -147,8 +147,13 @@
 			<div class="col">
 				<h3 class="text-center">Our Partners</h3>
 				<div class="wrapper">
+					<style>
+						#Stellar-Cyber {
+							width: 100px;
+						}
+					</style>
 					<?php foreach ($partners as $partner) : ?>
-						<img src="<?= base_url('assets'); ?>/img/partners/<?= $partner['filename']; ?>" alt="<?= $partner['name']; ?>" />
+						<img id="<?= $partner['name']; ?>" src="<?= base_url('assets'); ?>/img/partners/<?= $partner['filename']; ?>" alt="<?= $partner['name']; ?>" />
 					<?php endforeach; ?>
 				</div>
 			</div>

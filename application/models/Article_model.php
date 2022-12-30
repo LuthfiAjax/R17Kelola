@@ -15,15 +15,27 @@ class Article_model extends CI_Model
     return $this->db->query($query);
   }
 
+  public function get_event($start, $limit)
+  {
+    $query = "SELECT * FROM `event` WHERE tampil=1 ORDER BY id DESC LIMIT $start, $limit";
+    return $this->db->query($query);
+  }
+
   public function count_article()
   {
     $query = "SELECT * FROM `article` WHERE tampil=1 ORDER BY id DESC";
     return $this->db->query($query)->num_rows();
   }
 
-  public function single_article($slug)
+  public function count_event()
   {
-    $query = "SELECT * FROM `article` WHERE slug_id = $slug";
+    $query = "SELECT * FROM `event` WHERE tampil=1 ORDER BY id DESC";
+    return $this->db->query($query)->num_rows();
+  }
+
+  public function single_event($slug)
+  {
+    $query = "SELECT * FROM `event` WHERE slug_id = $slug";
     return $this->db->query($query);
   }
 }

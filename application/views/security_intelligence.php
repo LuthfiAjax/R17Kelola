@@ -41,7 +41,7 @@
                 <div class="container-fluid portfolio-wide">
                     <div data-groups='["photo", "design"]' class="col-sm-4">
                         <div class="portfolio-item">
-                            <a href="/technology/r17-integrated-security-solutions"><img src="<?= base_url('assets'); ?>/img/techno/riss.jpg" alt="" />
+                            <a href="<?= base_url(''); ?>technology/r17-integrated-security-solutions"><img src="<?= base_url('assets'); ?>/img/techno/riss.jpg" alt="" />
                                 <div class="portfolio-overlay">
                                     <div class="caption">
                                         <h5>R17 Integrated Security Solutions (RISS)</h5>
@@ -52,7 +52,7 @@
                     </div>
                     <div data-groups='["photo", "branding"]' class="col-sm-4">
                         <div class="portfolio-item">
-                            <a href="/technology/location-services"><img src="<?= base_url('assets'); ?>/img/techno/ls.jpg" alt="" />
+                            <a href="<?= base_url(''); ?>technology/location-services"><img src="<?= base_url('assets'); ?>/img/techno/ls.jpg" alt="" />
                                 <div class="portfolio-overlay">
                                     <div class="caption">
                                         <h5>Location Based Services</h5>
@@ -63,7 +63,7 @@
                     </div>
                     <div data-groups='["design"]' class="col-sm-4">
                         <div class="portfolio-item">
-                            <a href="/technology/security-intelligence"><img src="<?= base_url('assets'); ?>/img/techno/si.jpg" alt="" />
+                            <a href="<?= base_url(''); ?>technology/security-intelligence"><img src="<?= base_url('assets'); ?>/img/techno/si.jpg" alt="" />
                                 <div class="portfolio-overlay">
                                     <div class="caption">
                                         <h5>Security Intelligence</h5>

@@ -41,3 +41,5 @@ $route['insight/article-news'] = 'Article/article_news';
 $route['insight/article-news/(:num)'] = 'Article/article_news';
 $route['insight/article/(:any)'] = 'Article/single_article/$1';
 $route['insight/event'] = 'Article/event';
+$route['insight/event/(:num)'] = 'Article/event';
+$route['insight/event/R17/(:any)'] = 'Article/single_event/$1';

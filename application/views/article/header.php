@@ -194,77 +194,50 @@
                     <li>
                         <a href="<?= base_url('about'); ?>">About Us</a>
                     </li>
+                    <!-- solusi -->
                     <li>
                         <a href="#solution" class="page-scroll">Solution <i class="fa fa-angle-down"></i><span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li>
-                                <a href="<?= base_url('solution/digital-age-networking'); ?>">Digital Age Networking</a>
-                            </li>
-                            <li>
-                                <a href="<?= base_url('solution/business-continuity-collaboration'); ?>">Business Continutiy Collaboration</a>
-                            </li>
-                            <li>
-                                <a href="<?= base_url('solution/security-intelligence'); ?>">Security & Intelligence</a>
-                            </li>
+                            <?php foreach ($solutions as $solution) : ?>
+                                <li>
+                                    <a href="<?= base_url('' . $solution['url']); ?>"><?= $solution['name']; ?></a>
+                                </li>
+                            <?php endforeach; ?>
                         </ul>
                     </li>
+                    <!-- teknologi -->
                     <li>
                         <a href="#technology" class="page-scroll">Technology <i class="fa fa-angle-down"></i><span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li>
-                                <a href="<?= base_url('technology/unified-network-infrastructure'); ?>">Unified Network Infrastructure</a>
-                            </li>
-                            <li>
-                                <a href="<?= base_url('technology/private-cloud-computing-for-mission-critical-system'); ?>">Private Cloud Computing for Mission Critical System</a>
-                            </li>
-                            <li>
-                                <a href="<?= base_url('technology/internet-of-things'); ?>">Internet of Things (IoT)</a>
-                            </li>
-                            <li>
-                                <a href="<?= base_url('technology/collaboration-communication'); ?>">Collaboration & Communication</a>
-                            </li>
-                            <li>
-                                <a href="<?= base_url('technology/secured-communication'); ?>">Secured Communication</a>
-                            </li>
-                            <li>
-                                <a href="<?= base_url('technology/military-grade-communication-system'); ?>">Military Grade Communication System</a>
-                            </li>
-                            <li>
-                                <a href="<?= base_url('technology/digital-workplace'); ?>">Digital Workplace</a>
-                            </li>
-                            <li>
-                                <a href="<?= base_url('technology/r17-integrated-security-solutions'); ?>">R17 Integrated Security Solutions (RISS)</a>
-                            </li>
-                            <li>
-                                <a href="<?= base_url('technology/location-services'); ?>">Location Based Services</a>
-                            </li>
-                            <li>
-                                <a href="<?= base_url('technology/security-intelligence'); ?>">Security Intelligence</a>
-                            </li>
-
-
+                            <?php foreach ($technologies as $technology) : ?>
+                                <li>
+                                    <a href="<?= base_url('' . $technology['url']); ?>"><?= $technology['name']; ?></a>
+                                </li>
+                            <?php endforeach; ?>
                         </ul>
                     </li>
+                    <!-- project -->
                     <li>
                         <a href="<?= base_url(''); ?>project" class="page-scroll">Project <i class="fa fa-angle-down"></i><span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="<?= base_url('project/it-service-management'); ?>">IT Service Management</a>
+                                <a href="<?= base_url('project/data-digital-forensic'); ?>">Data Digital Forensic</a>
                             </li>
                             <li>
                                 <a href="<?= base_url('project/it-enterprise-architecture'); ?>">IT Enterprise Architecture</a>
                             </li>
                             <li>
+                                <a href="<?= base_url('project/it-service-management'); ?>">IT Service Management</a>
+                            </li>
+                            <li>
+                                <a href="<?= base_url('project/radio-communication-system-combat-vehicles'); ?>">Radio Communication System – Combat Vehicles</a>
+                            </li>
+                            <li>
                                 <a href="<?= base_url('project/secure-cyber-ecosystem-monitoring-center'); ?>">Secure Cyber Ecosystem Monitoring Center (SCEMC)</a>
-                            </li>
-                            <li>
-                                <a href="<?= base_url('project/radio-communication-system-combat-vehicles'); ?>">Radio Communication System - Combat Vehicles</a>
-                            </li>
-                            <li>
-                                <a href="<?= base_url('project/data-digital-forensic'); ?>">Data Digital Forensic</a>
                             </li>
                         </ul>
                     </li>
+                    <!-- Insight -->
                     <li>
                         <a href="#">Insight <i class="fa fa-angle-down"></i><span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -276,33 +249,34 @@
                             </li>
                         </ul>
                     </li>
+                    <!-- Contact -->
                     <li>
                         <a href="#">Contact <i class="fa fa-angle-down"></i><span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="<?= base_url('contact-us'); ?>">Contact Us</a>
+                                <a href="<?= base_url('career'); ?>r">Career</a>
                             </li>
                             <li>
-                                <a href="<?= base_url('career'); ?>r">Career</a>
+                                <a href="<?= base_url('contact-us'); ?>">Contact Us</a>
                             </li>
                             <li>
                                 <a href="<?= base_url(''); ?>help/">Helpdesk</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <!-- <li class="dropdown">
                         <a href="#" class="dropdown-toggle"><i class="fa fa-search fa-lg"></i><span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <form method="post" class="search-form">
+                                <form method="GET" class="search-form" action="insight/article-news">
                                     <button type="submit" title="Search" class="search-button">
                                         <i class="fa fa-search fa-lg"></i>
                                     </button>
-                                    <input type="text" placeholder="SEARCH" class="form-control search-field" />
+                                    <input type="text" name="cari" placeholder="SEARCH ARTICLES" class="form-control search-field" />
                                 </form>
                             </li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle"><span class="lang">Eng</span><span class="caret"></span></a>
                         <!-- <ul class="dropdown-menu">

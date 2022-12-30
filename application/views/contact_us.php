@@ -18,7 +18,7 @@
                 </h5>
                 <h5>
                     <i class="fa fa-envelope fa-fw fa-lg"></i>
-                    <a href="mailto:support@r17.co.id">support@r17.co.id</a>
+                    <a href="mailto:sales@r17.co.id">sales@r17.co.id</a>
                 </h5>
                 <h5>
                     <i class="fa fa-phone fa-fw fa-lg"></i>

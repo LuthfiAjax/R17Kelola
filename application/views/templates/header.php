@@ -133,21 +133,19 @@
                             <li><a href="<?= base_url(''); ?>help/">Helpdesk</a></li>
                         </ul>
                     </li>
-
-                    <li class="dropdown">
+                    <!-- <li class="dropdown">
                         <a href="#" class="dropdown-toggle"><i class="fa fa-search fa-lg"></i><span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <form method="post" class="search-form">
+                                <form method="GET" class="search-form" action="insight/article-news">
                                     <button type="submit" title="Search" class="search-button">
                                         <i class="fa fa-search fa-lg"></i>
                                     </button>
-                                    <input type="text" placeholder="SEARCH ARTICLES" class="form-control search-field" />
+                                    <input type="text" name="cari" placeholder="SEARCH ARTICLES" class="form-control search-field" />
                                 </form>
                             </li>
                         </ul>
-                    </li>
-
+                    </li> -->
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle"><span class="lang">Eng</span><span class="caret"></span></a>
                         <!-- <ul class="dropdown-menu">

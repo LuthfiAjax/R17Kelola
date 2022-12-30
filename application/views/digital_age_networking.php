@@ -40,7 +40,7 @@
                 <div class="container-fluid portfolio-wide">
                     <div data-groups='["photo", "design"]' class="col-sm-3">
                         <div class="portfolio-item">
-                            <a href="/technology/unified-network-infrastructure"><img src="<?= base_url('assets'); ?>/img/techno/uni.jpg" alt="" />
+                            <a href="<?= base_url(''); ?>technology/unified-network-infrastructure"><img src="<?= base_url('assets'); ?>/img/techno/uni.jpg" alt="" />
                                 <div class="portfolio-overlay">
                                     <div class="caption">
                                         <h5>Unified Network Infrastructure</h5>
@@ -51,7 +51,7 @@
                     </div>
                     <div data-groups='["photo", "branding"]' class="col-sm-3">
                         <div class="portfolio-item">
-                            <a href="/technology/private-cloud-computing-for-mission-critical-system"><img src="<?= base_url('assets'); ?>/img/techno/an.jpg" alt="" />
+                            <a href="<?= base_url(''); ?>technology/private-cloud-computing-for-mission-critical-system"><img src="<?= base_url('assets'); ?>/img/techno/an.jpg" alt="" />
                                 <div class="portfolio-overlay">
                                     <div class="caption">
                                         <h5>
@@ -64,7 +64,7 @@
                     </div>
                     <div data-groups='["design"]' class="col-sm-3">
                         <div class="portfolio-item">
-                            <a href="/technology/internet-of-things"><img src="<?= base_url('assets'); ?>/img/techno/iot.jpg" alt="" />
+                            <a href="<?= base_url(''); ?>technology/internet-of-things"><img src="<?= base_url('assets'); ?>/img/techno/iot.jpg" alt="" />
                                 <div class="portfolio-overlay">
                                     <div class="caption">
                                         <h5>Internet of Things (IoT)</h5>
@@ -75,7 +75,7 @@
                     </div>
                     <div data-groups='["design"]' class="col-sm-3">
                         <div class="portfolio-item">
-                            <a href="/technology/digital-workplace"><img src="<?= base_url('assets'); ?>/img/techno/dw.jpg" alt="" />
+                            <a href="<?= base_url(''); ?>technology/digital-workplace"><img src="<?= base_url('assets'); ?>/img/techno/dw.jpg" alt="" />
                                 <div class="portfolio-overlay">
                                     <div class="caption">
                                         <h5>Digital Workplace</h5>

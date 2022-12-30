@@ -10,53 +10,39 @@
     <div class="container">
         <div class="clearfix"></div>
         <div class="row grid-pad">
-            <div class="col-sm-6 col-md-4">
-                <a href="/event/ensuring-the-security-of-digital-ecosystem-in-indonesia"><img src="<?= base_url('assets'); ?>/img/event/rps.jpg" alt="" class="img-responsive center-block" />
-                    <h5 style="
-                  display: -webkit-box;
-                  -webkit-line-clamp: 2;
-                  -webkit-box-orient: vertical;
-                  overflow: hidden;
-                  text-overflow: ellipsis;">
-                        #R17PodcastShow Vol.01: Ensuring The Security of Digital
-                        Ecosystem in Indonesia
-                    </h5>
-                </a>
-                <div class="mb-4" style="
-                display: -webkit-box;
-                -webkit-line-clamp: 3;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;">
-                    R17 Podcast Show merupakan wadah komunikasi dua arah untuk
-                    membahas isu-isu terkini mengenai perkembangan bisnis dan
-                    teknologi yang dituangkan dalam bentuk hybrid event.
+            <?php foreach ($events as $event) : ?>
+                <div class="col-sm-6 col-md-4">
+                    <a href="<?= base_url('insight/event/R17/' . $event['slug_id']); ?>"><img src="<?= base_url('assets/img/event/' . $event['small_image']); ?>" alt="<?= $event['title_id']; ?>" class="img-responsive center-block" />
+                        <h5 style="
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            text-overflow: ellipsis;">
+                            <?= $event['title_id']; ?>
+                        </h5>
+                    </a>
+                    <div class="mb-4" style="
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;">
+                        <?= $event['deskripsi']; ?>
+                    </div>
+                    <?php
+                    $date = strtotime($event['publish_date']);
+                    ?>
+                    <span style="position: absolute;right:20px;top:10px;background:#f9f9f9d1;text-align: center;border-radius: 10px 10px 10px 10px;color:black;padding:5px 10px;font-size:10px;"><b><?= date('Y-m-d', $date); ?></b></span>
+                    <a href="<?= base_url('insight/event/R17/' . $event['slug_id']); ?>" class="btn btn-gray btn-xs">Read more</a>
                 </div>
-                <span style="position: absolute;right:20px;top:10px;background:#f9f9f9d1;text-align: center;border-radius: 10px 10px 10px 10px;color:black;padding:5px 10px;font-size:10px;"><b>22-09-2022</b></span>
-                <a href="/event/ensuring-the-security-of-digital-ecosystem-in-indonesia" class="btn btn-gray btn-xs">Read more</a>
+            <?php endforeach; ?>
+            <!-- pagination -->
+            <div class="row">
+                <div class="d-flex justify-content-center">
+                    <?= $this->pagination->create_links(); ?>
+                </div>
             </div>
         </div>
     </div>
 </section>
-<!-- Pagination-->
-<div class="section section-small bg-white">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <nav>
-                    <ul class="pagination">
-                        <li class="disabled">
-                            <a aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-                        </li>
-                        <li class="active">
-                            <a href="#">1</a>
-                        </li>
-                        <li class="disabled">
-                            <a aria-label="Previous"><span aria-hidden="true">&raquo;</span></a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
-</div>

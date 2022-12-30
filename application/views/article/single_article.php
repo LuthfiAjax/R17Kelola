@@ -2,6 +2,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
+                <style>
+                    @media only screen and (max-width: 600px) {
+                        h1 {
+                            font-size: 18px;
+                        }
+                    }
+                </style>
                 <h1 style="padding-top:40px;" class="container"><b><?= $article->title_id; ?></b></h1>
                 <div style="margin-top:-20px;" class="container">
                     <a class="btn btn-sm btn-social-outline btn-fb-outline" href="https://www.facebook.com/sharer/sharer.php?u=<?= base_url('insight/article/' . $article->slug_id); ?>" target="_blank" title="<?= $article->title_id; ?>">
@@ -44,9 +51,14 @@
 
                 <div class="container">
                     <style>
-                        figure,
-                        img {
-                            width: 80% !important;
+                        figure {
+                            margin: auto;
+                            width: 90% !important;
+                        }
+
+                        figure img {
+                            width: 80%;
+                            margin: auto;
                         }
                     </style>
                     <article>

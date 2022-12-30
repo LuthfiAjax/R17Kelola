@@ -46,7 +46,7 @@
                 <div class="container-fluid portfolio-wide">
                     <div data-groups='["photo", "design"]' class="col-sm-4">
                         <div class="portfolio-item">
-                            <a href="/technology/collaboration-communication"><img src="<?= base_url('assets'); ?>/img/techno/cv.jpg" alt="" />
+                            <a href="<?= base_url(''); ?>technology/collaboration-communication"><img src="<?= base_url('assets'); ?>/img/techno/cv.jpg" alt="" />
                                 <div class="portfolio-overlay">
                                     <div class="caption">
                                         <h5>Collaboration & Communication</h5>
@@ -57,7 +57,7 @@
                     </div>
                     <div data-groups='["photo", "branding"]' class="col-sm-4">
                         <div class="portfolio-item">
-                            <a href="/technology/secured-communication"><img src="<?= base_url('assets'); ?>/img/techno/sc.jpg" alt="" />
+                            <a href="<?= base_url(''); ?>technology/secured-communication"><img src="<?= base_url('assets'); ?>/img/techno/sc.jpg" alt="" />
                                 <div class="portfolio-overlay">
                                     <div class="caption">
                                         <h5>Secured Communication</h5>
@@ -68,7 +68,7 @@
                     </div>
                     <div data-groups='["design"]' class="col-sm-4">
                         <div class="portfolio-item">
-                            <a href="/technology/military-grade-communication-system"><img src="<?= base_url('assets'); ?>/img/techno/cas.jpg" alt="" />
+                            <a href="<?= base_url(''); ?>technology/military-grade-communication-system"><img src="<?= base_url('assets'); ?>/img/techno/cas.jpg" alt="" />
                                 <div class="portfolio-overlay">
                                     <div class="caption">
                                         <h5>Military Grade Communication System</h5>
