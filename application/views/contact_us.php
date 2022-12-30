@@ -27,6 +27,7 @@
             </div>
             <div class="col-md-5 col-md-offset-2">
                 <h2>Business Contact</h2>
+                <span id="form_alerts"></span>
                 <!-- Contact Form - Enter your email address on line 17 of the mail/contact_me.php file to make this form work. For more information on how to do this please visit the Docs!-->
                 <form id="contactForm" name="form" method="POST">
                     <?php $time = date('d F Y, h:i:s A') ?>
@@ -34,31 +35,31 @@
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls">
                             <label for="name" class="sr-only control-label">You Name</label>
-                            <input id="Name" name="Name" type="text" placeholder="You Name" required="" data-validation-required-message="Please enter name" class="form-control input-lg" /><span class="help-block text-danger"></span>
+                            <input id="Name" name="Name" type="text" placeholder="You Name" required class="form-control input-lg" />
                         </div>
                     </div>
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls">
                             <label for="email" class="sr-only control-label">You Email</label>
-                            <input id="Email" name="Email" type="email" placeholder="You Email" required="" data-validation-required-message="Please enter email" class="form-control input-lg" /><span class="help-block text-danger"></span>
+                            <input id="Email" name="Email" type="email" placeholder="You Email" required class="form-control input-lg" />
                         </div>
                     </div>
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls">
                             <label for="phone" class="sr-only control-label">You Phone</label>
-                            <input id="Phone" name="Phone" type="tel" placeholder="You Phone" required="" data-validation-required-message="Please enter phone number" class="form-control input-lg" /><span class="help-block text-danger"></span>
+                            <input id="Phone" name="Phone" type="tel" placeholder="You Phone" required class="form-control input-lg" />
                         </div>
                     </div>
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls">
                             <label for="message" class="sr-only control-label">Message</label>
-                            <textarea id="Message" name="Message" rows="2" placeholder="Message" required="" data-validation-required-message="Please enter a message." aria-invalid="false" class="form-control input-lg"></textarea><span class="help-block text-danger"></span>
+                            <textarea id="Message" name="Message" rows="2" placeholder="Message" required aria-invalid="false" class="form-control input-lg"></textarea>
                         </div>
                     </div>
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls">
                             <label class="control-label">Contact with</label>
-                            <select id="To" name="opt-contact" class="form-control input-lg" style="width: 100%;" required="" data-validation-required-message="Please choose one.">
+                            <select id="Contact" name="Contact" class="form-control input-lg" style="width: 100%;" required>
                                 <option value="sales">Sales</option>
                                 <option value="support">Support</option>
                             </select>
@@ -69,6 +70,21 @@
                         Send
                     </button>
                 </form>
+                <script>
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbwLcCD8PdQ4DJElpBc2DOf4v7LTlvOiLeFNUfj0WdGliLpZH_Hu5t9pEds0pAw5RNEW/exec'
+                    const form = document.forms['form']
+
+                    form.addEventListener('submit', e => {
+                        e.preventDefault()
+                        fetch(scriptURL, {
+                                method: 'POST',
+                                body: new FormData(form)
+                            })
+                            .then(response => $("#form_alerts").html("<div class='alert alert-success'>Data has been sent successfully</div>"))
+                            .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>a system failure occurred, Data failed to send!.</div>"))
+                        form.reset();
+                    })
+                </script>
             </div>
         </div>
     </div>
