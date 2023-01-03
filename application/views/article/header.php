@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- meta tag -->
-    <meta name="description" content="" />
+    <meta name="description" content="<?= $article->deskripsi; ?>" />
     <meta name="author" content="R17 Group" />
-    <meta name="keywords" content="" />
+    <meta name="keywords" content="<?= $article->title_id; ?>" />
 
     <meta property="og:title" content="R17 Group" />
     <meta property="og:description" content="" />

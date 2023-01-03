@@ -43,3 +43,6 @@ $route['insight/article/(:any)'] = 'Article/single_article/$1';
 $route['insight/event'] = 'Article/event';
 $route['insight/event/(:num)'] = 'Article/event';
 $route['insight/event/R17/(:any)'] = 'Article/single_event/$1';
+
+// sitemap
+$route['sitemap\.xml'] = 'Welcome/sitemap';

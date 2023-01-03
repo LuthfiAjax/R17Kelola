@@ -263,4 +263,11 @@ class Welcome extends CI_Controller
 		$this->load->view('career');
 		$this->load->view('templates/footer');
 	}
+
+	public function sitemap()
+	{
+		$data['articles'] = $this->db->get_where('article', ['tampil' => 1])->result_array();
+		$data['events'] = $this->db->get_where('event', ['tampil' => 1])->result_array();
+		$this->load->view('sitemap', $data);
+	}
 }
