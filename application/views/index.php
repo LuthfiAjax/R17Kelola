@@ -84,7 +84,7 @@
 				<div class="owl-carousel owl-theme client-carousel">
 					<?php foreach ($clients as $client) : ?>
 						<div class="item">
-							<img src="<?= base_url('assets'); ?>/<?= $client['filename']; ?>" alt="<?= $client['name']; ?>" />
+							<img src="<?= base_url('assets/img/clients/' . $client['filename']); ?>" alt="<?= $client['name']; ?>" />
 						</div>
 					<?php endforeach; ?>
 				</div>
@@ -93,7 +93,7 @@
 	</div>
 </section>
 
-<!-- Section-->
+<!-- Solutions-->
 <section>
 	<div class="container text-center" id="solution">
 		<div class="row">
@@ -113,7 +113,7 @@
 	</div>
 </section>
 
-<!-- Services 2 Section-->
+<!-- Technology-->
 <section class="section-small text-center portfolio-wide">
 	<!-- <div class="overlay"></div> -->
 	<div class="container" id="technology">
@@ -146,12 +146,12 @@
 		<div class="row">
 			<div class="col">
 				<h3 class="text-center">Our Partners</h3>
+				<style>
+					#dell {
+						width: 100px;
+					}
+				</style>
 				<div class="wrapper">
-					<style>
-						#Stellar-Cyber {
-							width: 100px;
-						}
-					</style>
 					<?php foreach ($partners as $partner) : ?>
 						<img id="<?= $partner['name']; ?>" src="<?= base_url('assets'); ?>/img/partners/<?= $partner['filename']; ?>" alt="<?= $partner['name']; ?>" />
 					<?php endforeach; ?>

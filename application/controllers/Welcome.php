@@ -26,6 +26,8 @@ class Welcome extends CI_Controller
 	{
 		$data['technologies'] = $this->client->get_tech()->result_array();
 		$data['solutions'] = $this->client->get_solution()->result_array();
+		$data['sertifikatpro'] = $this->client->get_sertif_pro()->result_array();
+		$data['sertifikat'] = $this->client->get_sertif()->result_array();
 		$data['title'] = 'About Rizki Tujuhbelas Kelola';
 
 		$this->load->view('templates/header', $data);

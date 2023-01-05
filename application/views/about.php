@@ -55,42 +55,11 @@
             <div class="col">
                 <h3 class="text-center">PROFESSIONAL CERFITICATIONS</h3>
                 <div class="owl-carousel owl-theme ahli-carousel px-5">
-                    <div class="item">
-                        <img class="center-block img-responsive" src="<?= base_url('assets'); ?>/img/sertifikasi-ahli/sertif-01.jpg" alt="CERFITICATIONS R17" />
-                    </div>
-                    <div class="item">
-                        <img class="center-block img-responsive" src="<?= base_url('assets'); ?>/img/sertifikasi-ahli/sertif-02.jpg" alt="CERFITICATIONS R17" />
-                    </div>
-                    <div class="item">
-                        <img class="center-block img-responsive" src="<?= base_url('assets'); ?>/img/sertifikasi-ahli/sertif-03.jpg" alt="CERFITICATIONS R17" />
-                    </div>
-                    <div class="item">
-                        <img class="center-block img-responsive" src="<?= base_url('assets'); ?>/img/sertifikasi-ahli/sertif-04.jpg" alt="CERFITICATIONS R17" />
-                    </div>
-                    <div class="item">
-                        <img class="center-block img-responsive" src="<?= base_url('assets'); ?>/img/sertifikasi-ahli/sertif-05.jpg" alt="CERFITICATIONS R17" />
-                    </div>
-                    <div class="item">
-                        <img class="center-block img-responsive" src="<?= base_url('assets'); ?>/img/sertifikasi-ahli/sertif-06.jpg" alt="CERFITICATIONS R17" />
-                    </div>
-                    <div class="item">
-                        <img class="center-block img-responsive" src="<?= base_url('assets'); ?>/img/sertifikasi-ahli/sertif-07.jpg" alt="CERFITICATIONS R17" />
-                    </div>
-                    <div class="item">
-                        <img class="center-block img-responsive" src="<?= base_url('assets'); ?>/img/sertifikasi-ahli/sertif-08.jpg" alt="CERFITICATIONS R17" />
-                    </div>
-                    <div class="item">
-                        <img class="center-block img-responsive" src="<?= base_url('assets'); ?>/img/sertifikasi-ahli/sertif-09.jpg" alt="CERFITICATIONS R17" />
-                    </div>
-                    <div class="item">
-                        <img class="center-block img-responsive" src="<?= base_url('assets'); ?>/img/sertifikasi-ahli/sertif-10.jpg" alt="CERFITICATIONS R17" />
-                    </div>
-                    <div class="item">
-                        <img class="center-block img-responsive" src="<?= base_url('assets'); ?>/img/sertifikasi-ahli/sertif-11.jpg" alt="CERFITICATIONS R17" />
-                    </div>
-                    <div class="item">
-                        <img class="center-block img-responsive" src="<?= base_url('assets'); ?>/img/sertifikasi-ahli/sertif-12.jpg" alt="CERFITICATIONS R17" />
-                    </div>
+                    <?php foreach ($sertifikatpro as $sertifpro) : ?>
+                        <div class="item">
+                            <img class="center-block img-responsive" src="<?= base_url('assets/img/sertifikasi/' . $sertifpro['img_certification']); ?>" alt="CERFITICATIONS R17" />
+                        </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </div>
@@ -103,27 +72,11 @@
             <div class="col">
                 <h3 class="text-center">Our Certification</h3>
                 <div class="owl-carousel owl-theme sertifikasi-carousel px-5 owl-centered py-5">
-                    <div class="item">
-                        <img class="center-block img-responsive" src="<?= base_url('assets'); ?>/img/sertifikasi/sertifikasi-03.png" alt="Our Certification" />
-                    </div>
-                    <div class="item">
-                        <img class="center-block img-responsive" src="<?= base_url('assets'); ?>/img/sertifikasi/sertifikasi-05.png" alt="Our Certification" />
-                    </div>
-                    <div class="item">
-                        <img class="center-block img-responsive" src="<?= base_url('assets'); ?>/img/sertifikasi/sertifikasi-01.png" alt="Our Certification" />
-                    </div>
-                    <div class="item">
-                        <img class="center-block img-responsive" src="<?= base_url('assets'); ?>/img/sertifikasi/sertif-1.jpg" alt="Our Certification" />
-                    </div>
-                    <div class="item">
-                        <img class="center-block img-responsive" src="<?= base_url('assets'); ?>/img/sertifikasi/sertifikasi-02.png" alt="Our Certification" />
-                    </div>
-                    <div class="item">
-                        <img class="center-block img-responsive" src="<?= base_url('assets'); ?>/img/sertifikasi/sertifikasi-07.png" alt="Our Certification" />
-                    </div>
-                    <div class="item">
-                        <img class="center-block img-responsive" src="<?= base_url('assets'); ?>/img/sertifikasi/comptia.jpg" alt="Our Certification" />
-                    </div>
+                    <?php foreach ($sertifikat as $sertif) : ?>
+                        <div class="item">
+                            <img class="center-block img-responsive" src="<?= base_url('assets/img/sertifikasi/' . $sertif['img_certification']); ?>" alt="Our Certification" />
+                        </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </div>

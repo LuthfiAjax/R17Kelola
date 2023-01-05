@@ -32,4 +32,16 @@ class Assets_model extends CI_Model
     $query = "SELECT * FROM `solution` ORDER BY `name` ASC";
     return $this->db->query($query);
   }
+
+  public function get_sertif_pro()
+  {
+    $query = "SELECT * FROM `certification` WHERE `type_certification` = 1 ORDER BY `name_certification` ASC";
+    return $this->db->query($query);
+  }
+
+  public function get_sertif()
+  {
+    $query = "SELECT * FROM `certification` WHERE `type_certification` = 2 ORDER BY `name_certification` ASC";
+    return $this->db->query($query);
+  }
 }

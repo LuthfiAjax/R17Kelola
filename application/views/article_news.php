@@ -41,7 +41,7 @@
                         ?>
                     </div>
                     <span style="position: absolute;right:20px;top:10px;background:#f9f9f9d1;text-align: center;border-radius: 10px 10px 10px 10px;color:black;padding:5px 10px;font-size:10px;"><b><?= date('Y-m-d', $date); ?></b></span>
-                    <a href="<?= base_url('insight/article-news/' . $article['slug_id']); ?>" class="btn btn-gray btn-xs">Read more</a>
+                    <a href="<?= base_url('insight/article/' . $article['slug_id']); ?>" class="btn btn-gray btn-xs">Read more</a>
                 </div>
             <?php endforeach; ?>
         </div>
