@@ -2,11 +2,11 @@
 <section class="footer bg-gray">
     <div class="container">
         <div class="row footer-row">
-            <div class="col-md-3 logo-tagline">
-                <img class="logo" src="<?= base_url('assets'); ?>/img/logo.png" alt="logo footer" />
+            <div class="col-md-4 logo-tagline">
+                <img class="logo" src="<?= base_url('assets'); ?>/assets/img/logo.png" alt="logo footer" />
                 <div class="vl mx-3"></div>
-                <small class="tagline">Managing Your IT <br>
-                    Complexity</small>
+                <strong class="tagline">Managing Your IT <br>
+                    Complexity</strong>
             </div>
             <div class="col-md-4">
                 18 Parc Place Tower D, 8th Floor <br>
@@ -30,7 +30,7 @@
                     <li><a href="<?= base_url(''); ?>#">Insights</a></li>
                 </ul>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <ul class="list-inline mb-0">
                     <li>
                         <a target="_blank" href="https://www.linkedin.com/company/r17kelola/"><i class="fa fa-linkedin fa-fw fa-lg"></i></a>
@@ -53,43 +53,43 @@
 </section>
 <!-- jQuery-->
 
-<script src="https://r17.co.id/js/jquery-1.12.3.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
 
 <!-- Bootstrap Core JavaScript-->
 
-<script src="https://r17.co.id/js/bootstrap.min.js"></script>
+<script src="<?= base_url('assets/'); ?>js/bootstrap.min.js"></script>
 
 <!-- Plugin JavaScript-->
 
-<script src="https://r17.co.id/js/jquery.easing.min.js"></script>
+<script src="<?= base_url('assets/'); ?>js/jquery.easing.min.js"></script>
 
-<script src="https://r17.co.id/js/jquery.countdown.min.js"></script>
+<script src="<?= base_url('assets/'); ?>js/jquery.countdown.min.js"></script>
 
-<script src="https://r17.co.id/js/device.min.js"></script>
+<script src="<?= base_url('assets/'); ?>js/device.min.js"></script>
 
-<script src="https://r17.co.id/js/form.min.js"></script>
+<script src="<?= base_url('assets/'); ?>js/form.min.js"></script>
 
-<script src="https://r17.co.id/js/jquery.placeholder.min.js"></script>
+<script src="<?= base_url('assets/'); ?>js/jquery.placeholder.min.js"></script>
 
-<script src="https://r17.co.id/js/jquery.shuffle.min.js"></script>
+<script src="<?= base_url('assets/'); ?>js/jquery.shuffle.min.js"></script>
 
-<script src="https://r17.co.id/js/jquery.parallax.min.js"></script>
+<script src="<?= base_url('assets/'); ?>js/jquery.parallax.min.js"></script>
 
-<script src="https://r17.co.id/js/jquery.circle-progress.min.js"></script>
+<script src="<?= base_url('assets/'); ?>js/jquery.circle-progress.min.js"></script>
 
-<script src="https://r17.co.id/js/jquery.swipebox.min.js"></script>
+<script src="<?= base_url('assets/'); ?>js/jquery.swipebox.min.js"></script>
 
-<script src="https://r17.co.id/js/smoothscroll.min.js"></script>
+<script src="<?= base_url('assets/'); ?>js/smoothscroll.min.js"></script>
 
-<script src="https://r17.co.id/js/tweecool.min.js"></script>
+<script src="<?= base_url('assets/'); ?>js/tweecool.min.js"></script>
 
-<script src="https://r17.co.id/js/wow.min.js"></script>
+<script src="<?= base_url('assets/'); ?>js/wow.min.js"></script>
 
-<script src="https://r17.co.id/js/jquery.smartmenus.js"></script>
+<script src="<?= base_url('assets/'); ?>js/jquery.smartmenus.js"></script>
 
 <!-- Custom Theme JavaScript-->
 
-<script src="https://r17.co.id/js/pheromone-article.js"></script>
+<script src="<?= base_url('assets/'); ?>js/pheromone-article.js"></script>
 
 <!--[if lt IE 9]>
 

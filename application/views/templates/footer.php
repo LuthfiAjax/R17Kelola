@@ -2,18 +2,17 @@
 <section class="footer bg-gray">
     <div class="container">
         <div class="row footer-row">
-            <div class="col-md-3 logo-tagline">
+            <div class="col-md-4 logo-tagline">
                 <img class="logo" src="<?= base_url('assets'); ?>/img/logo.png" alt="logo" />
                 <div class="vl mx-3"></div>
                 <small class="tagline">Managing Your IT <br />
                     Complexity</small>
             </div>
             <div class="col-md-4">
-                18 Parc Place Tower D, 8th Floor <br />
-                Jl. Jend. Sudirman Kav.52-53 <br />
-                Sudirman Central Business District (SCBD)<br />
-                South Jakarta<br />
-                DKI Jakarta 12190 <br />
+                18 Parc Place Tower D, 8th Floor SCBD <br>
+                Jl. Jend. Sudirman Kav.52-53 Senayan, <br>
+                Kebayoran Baru, Jakarta Selatan 12190 <br><br>
+
                 Phone: <a href="tel:+622139721717">+62 21 3972 1717</a> <br />
                 Email: <a href="mailto:support@r17.co.id">sales@r17.co.id</a>
                 <br />
@@ -31,8 +30,8 @@
                     <li><a href="<?= base_url(''); ?>#">Insights</a></li>
                 </ul>
             </div>
-            <div class="col-md-3">
-                <ul class="list-inline mb-0">
+            <div class="col-md-2">
+                <ul class="list-inline mb-0 text-end">
                     <li>
                         <a target="_blank" href="https://www.linkedin.com/company/r17kelola/"><i class="fa fa-linkedin fa-fw fa-lg"></i></a>
                     </li>
@@ -47,7 +46,7 @@
         </div>
         <div class="row">
             <div class="col">
-                <p class="small text-center">&copy;<?= date('Y'); ?> Rizki Tujuhbelas Kelola</p>
+                <p class="mt-5 fs-6 text-center">&copy;<?= date('Y'); ?> Rizki Tujuhbelas Kelola</p>
             </div>
         </div>
     </div>

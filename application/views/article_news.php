@@ -47,9 +47,13 @@
         </div>
 
         <!-- pagination -->
-        <div class="row">
-            <div class="d-flex justify-content-center">
-                <?= $this->pagination->create_links(); ?>
+        <div class="section section-small bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <?= $this->pagination->create_links(); ?>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

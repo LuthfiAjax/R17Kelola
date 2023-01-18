@@ -34,7 +34,11 @@ $route['project/data-digital-forensic'] = 'Welcome/data_digital_forensic';
 
 // contact
 $route['contact-us'] = 'Welcome/contact_us';
+
+// career
 $route['career'] = 'Welcome/career';
+$route['career/(:any)'] = 'Welcome/career_us/$1';
+$route['apply/career'] = 'Welcome/career_apply';
 
 // insight article
 $route['insight/article-news'] = 'Article/article_news';

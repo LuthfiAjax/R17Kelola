@@ -7,21 +7,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <title>R17 - <?= $article->title_id; ?></title>
+
+    <?php $actual_link = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
     <!-- meta tag -->
     <meta name="description" content="<?= $article->deskripsi; ?>" />
-    <meta name="author" content="R17 Group" />
     <meta name="keywords" content="<?= $article->title_id; ?>" />
 
-    <meta property="og:title" content="R17 Group" />
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="<?= base_url(''); ?>assets/img/logo.png" />
-    <meta property="og:url" content="<?= base_url(''); ?>" />
-    <meta property="og:site_name" content="R17 Group" />
+    <link rel="canonical" href="<?= $actual_link; ?>" />
+
+    <meta property="article:publisher" content="https://www.facebook.com/officialr17group" />
+    <meta property="article:published_time" content="<?= date('Y-m-d H:i:s', strtotime($article->publish_date)); ?>" />
+
+    <meta property="og:locale" content="en" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="R17 - <?= $article->title_id; ?>" />
+    <meta property="og:description" content="<?= $article->deskripsi; ?>" />
+    <meta property="og:url" content="<?= $actual_link; ?>" />
+    <meta property="og:site_name" content="R17" />
+
+    <meta property="og:image" content="<?= base_url('assets/img/article/' . $article->header_image); ?>" />
+    <meta property="og:image:secure_url" content="<?= base_url('assets/img/article/' . $article->header_image); ?>" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:image:alt" content="<?= $article->title_id; ?>" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="<?= $article->deskripsi; ?>" />
+    <meta name="twitter:title" content="R17 - <?= $article->title_id; ?>" />
+    <meta name="twitter:domain" content="R17 Kelola" />
+    <meta name="twitter:image" content="<?= base_url('assets/img/article/' . $article->header_image); ?>" />
 
     <!-- faveicon -->
     <link rel="icon" type="image/x-icon" href="<?= base_url('assets/img/faveicon.png'); ?>">
 
-    <title>R17 - <?= $article->title_id; ?></title>
     <!-- Bootstrap Core CSS-->
     <link href="<?= base_url('assets'); ?>/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom CSS-->
@@ -260,29 +280,9 @@
                                 <a href="<?= base_url('contact-us'); ?>">Contact Us</a>
                             </li>
                             <li>
-                                <a href="<?= base_url(''); ?>help/">Helpdesk</a>
+                                <a href="<?= base_url(''); ?>/dev/help/">Helpdesk</a>
                             </li>
                         </ul>
-                    </li>
-                    <!-- <li class="dropdown">
-                        <a href="#" class="dropdown-toggle"><i class="fa fa-search fa-lg"></i><span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <form method="GET" class="search-form" action="insight/article-news">
-                                    <button type="submit" title="Search" class="search-button">
-                                        <i class="fa fa-search fa-lg"></i>
-                                    </button>
-                                    <input type="text" name="cari" placeholder="SEARCH ARTICLES" class="form-control search-field" />
-                                </form>
-                            </li>
-                        </ul>
-                    </li> -->
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle"><span class="lang">Eng</span><span class="caret"></span></a>
-                        <!-- <ul class="dropdown-menu">
-                            <li><a href="#">English</a></li>
-                            <li><a href="#">Indonesia</a></li>
-                        </ul> -->
                     </li>
                 </ul>
             </div>

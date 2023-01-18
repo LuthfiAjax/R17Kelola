@@ -44,4 +44,10 @@ class Assets_model extends CI_Model
     $query = "SELECT * FROM `certification` WHERE `type_certification` = 2 ORDER BY `name_certification` ASC";
     return $this->db->query($query);
   }
+
+  public function get_carerr()
+  {
+    $query = "SELECT * FROM `career` WHERE `status_jobs`=1 ORDER BY `title_jobs` ASC";
+    return $this->db->query($query);
+  }
 }
