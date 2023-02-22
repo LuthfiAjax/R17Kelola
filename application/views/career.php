@@ -33,13 +33,14 @@
                 <div class="col-sm-6 col-md-4">
                     <a href="<?= base_url('career/' . $row['slug_jobs']); ?>">
                         <img id="small_image" src="<?= base_url('assets/img/techno/dw.jpg'); ?>" alt="Loker" class="img-responsive center-block" />
-                        <span><i class="fas fa-location-dot"></i> <?= $row['type_jobs']; ?></span>
+                        <span class="text-left"><i class="fas fa-location-dot"></i> <?= $row['type_jobs']; ?></span>
                         <h4 style="display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">
                             <b><?= $row['title_jobs']; ?></b>
                         </h4>
                     </a>
                     <div class="mb-4" style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">
-                        We have opened vacancies for workers to fill the <?= $row['title_jobs']; ?> position
+                        We have opened vacancies for workers to fill the <?= $row['title_jobs']; ?> position <br>
+                        <span><b>Expiration Date</b> : <?= date('j F Y', $row['expired_jobs']); ?></span>
                     </div>
                     <a href="<?= base_url('career/' . $row['slug_jobs']); ?>" class="btn btn-gray btn-xs">View Detail</a>
                 </div>

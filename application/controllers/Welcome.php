@@ -334,7 +334,8 @@ class Welcome extends CI_Controller
 					'phone_candidate' => htmlspecialchars($phone),
 					'cv_candidate' => $cv,
 					'portofolio_candidate' => $portofolio,
-					'time' => time()
+					'time' => time(),
+					'form' => 'kelola'
 				);
 				$status = $this->db->insert('candidate', $data);
 

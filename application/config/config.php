@@ -23,7 +23,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/R17Kelola/';
+$config['base_url'] = 'http://r17kelola.test/';
 
 /*
 |--------------------------------------------------------------------------

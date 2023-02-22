@@ -15,7 +15,9 @@
                 <div class="row">
                     <div class="col-md-12">
                         <?= $careers->body_jobs; ?>
-                        <div></div>
+                        <div>
+                            <span><b>Expiration Date</b> : <?= date('j F Y', $careers->expired_jobs); ?></span>
+                        </div>
                         <div class="class mb-3">
                             <em>In the event that you haven&rsquo;t received any updates after 3 weeks, your data will be kept and we may contact you for another career destination.</em>
                         </div>
