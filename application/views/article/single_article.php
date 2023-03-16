@@ -27,7 +27,7 @@
                         </svg>
                     </a>
                     <br><br>
-                    <?= date('l, M F Y ', strtotime($article->publish_date)); ?>
+                    <?= date('l, j F Y ', strtotime($article->publish_date)); ?>
                 </div>
 
                 <!-- Slider Section-->
@@ -59,6 +59,14 @@
                         figure img {
                             width: 80%;
                             margin: auto;
+                        }
+
+                        img {
+                            max-width: 100%;
+                            height: auto;
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
                         }
                     </style>
                     <article>

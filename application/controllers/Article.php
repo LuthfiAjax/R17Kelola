@@ -58,7 +58,7 @@ class Article extends CI_Controller
     $data['solutions'] = $this->client->get_solution()->result_array();
     $data['article'] = $this->db->get_where('event', ['slug_id' => $slug])->row();
 
-    $this->load->view('article/header', $data);
+    $this->load->view('article/header_event', $data);
     $this->load->view('article/single_event');
     $this->load->view('article/footer');
   }
