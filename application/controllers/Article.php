@@ -31,6 +31,7 @@ class Article extends CI_Controller
     }
 
     $data['articles'] = $this->article->get_article($start, $config['per_page'])->result_array();
+    
     $data['technologies'] = $this->client->get_tech()->result_array();
     $data['solutions'] = $this->client->get_solution()->result_array();
 

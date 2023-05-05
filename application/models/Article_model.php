@@ -1,5 +1,6 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
+date_default_timezone_set('Asia/Jakarta');
 
 class Article_model extends CI_Model
 {
@@ -11,7 +12,8 @@ class Article_model extends CI_Model
 
   public function get_article($start, $limit)
   {
-    $query = "SELECT * FROM `article` WHERE tampil=1 ORDER BY id DESC LIMIT $start, $limit";
+    $current_time = date('Y-m-d H:i:s', time());
+    $query = "SELECT * FROM `article` WHERE tampil=1 AND publish_date <= NOW() ORDER BY id DESC LIMIT $start, $limit";
     return $this->db->query($query);
   }
 
